@@ -7,6 +7,18 @@ url: "//130.159.226.79:4000"
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-markdown: kramdown
+#### Under the Hood Stuff #####
+
+# Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
+# If you use maroku (default engine) some of your generated pages may not validate or lint as html5
+# If you don't have it install it via gem install rdiscount
+markdown: rdiscount
+
+# Continue compiling even if there are errors. Keep it true, unless troubleshooting.
+auto: true
+
+# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: README.md, package.json, grunt.js, Gruntfile.js, node_modules, gen.sh, Gemfile
