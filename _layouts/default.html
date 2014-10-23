@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-    <body{% if page.scroll-spy == 1 %} data-spy="scroll" data-target=".navbar-example"{% endif %}>
+    <body{% if page.scroll-spy == 1 %} data-spy="scroll" data-target="{{page.scroll-spy-target}}"{% endif %}>
 
     {% include header.html %}
 
