@@ -7,7 +7,7 @@ layout: default
   <h1>News!</h1>
       <div class="row">
         <div class="col-sm-8 blog-main">
-    {% for post in site.posts limit 10 %}
+    {% for post in site.posts limit: 5 %}
         <article>
           <div class="blog-post">
             <h2 class="blog-post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a><br />
@@ -19,7 +19,7 @@ layout: default
         </div>
       </div>
 
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p><a href="{{site.url}}/posts/" class="btn btn-default btn-lg active" role="button">More Posts!</a><span class="pull-left">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></span></p>
+  <p class="rss-subscribe"></p>
 
 </div>
