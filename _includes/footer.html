@@ -2,10 +2,8 @@
 
   <div class="container">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <span class="pull-right">
-        {% if site.github_username %}<li>
-          <a href="https://github.com/{{ site.github_username }}">
+    <h2 class="footer-heading">{{ site.title }}
+    <span class="pull-right">{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">
             <span class="icon github">
               <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -22,7 +20,7 @@
             </span>
             <span class="username">{{ site.github_username }}</span>
           </a>{% endif %}
-        {% if site.twitter_username %}<li>
+        {% if site.twitter_username %}
           <a href="https://twitter.com/{{ site.twitter_username }}">
             <span class="icon twitter">
               <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -38,7 +36,7 @@
             </span>
             <span class="username">{{ site.twitter_username }}</span>
           </a>{% endif %}
-    </span>
+    </h2>
 
   </div>
 
