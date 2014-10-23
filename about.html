@@ -4,24 +4,23 @@ scroll-spy: 1
 scroll-spy-targer: .navbar-spy
 ---
 
-    <div class="nav nav-tabs navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-spy">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">About Us</a></li>
-            <li><a href="#committee">The Committee</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div data-spy="scroll" data-target="#navbar-spy" data-offset="0" class="scrollspy">
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#about" role="tab" data-toggle="tab">About Us</a></li>
+  <li><a href="#committee" role="tab" data-toggle="tab">The Committee</a></li>
+  <li><a href="#contact" role="tab" data-toggle="tab">Contact Us</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane active" id="about">
       <h3 id="about">About Us!</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in rutrum neque, eget pulvinar ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce quis euismod nulla. Sed vitae nisi rutrum, fermentum turpis quis, porta tellus. Donec tristique nisi non tellus lacinia facilisis. Quisque tortor libero, facilisis in ultricies eget, molestie eget magna. Morbi dictum, sem eu egestas malesuada, magna erat consectetur odio, at venenatis mi ipsum fermentum est. Ut quis tellus porta, tincidunt mauris sit amet, commodo mi. Donec sit amet consectetur nisi.
 
 Phasellus vel interdum eros. Praesent vel purus congue, consectetur lorem vitae, egestas nulla. Nunc mattis aliquet nulla non vehicula. Sed condimentum, augue eu finibus tincidunt, ipsum odio aliquet lectus, vel egestas augue metus eget diam. Nullam diam ante, bibendum ut turpis ac, convallis ultrices arcu. Praesent efficitur molestie consectetur. Integer ac dui dui. Nulla sed purus placerat mauris commodo rhoncus. Vestibulum fringilla tortor id nulla blandit dignissim. Ut consectetur purus ac hendrerit tempor. Sed erat odio, faucibus lacinia lacinia eget, interdum id lectus. Fusce consequat nisl eu dolor porta mattis. Curabitur malesuada odio finibus porta malesuada. Praesent consectetur porttitor nisi a euismod. Suspendisse tincidunt nisi quis scelerisque faucibus. Donec vestibulum tincidunt egestas.
 
 Nunc bibendum ante nec aliquam feugiat. Vivamus molestie vitae massa sit amet feugiat. Duis congue interdum lacus sit amet dignissim. In hac habitasse platea dictumst. Donec vehicula cursus ullamcorper. Integer tincidunt vehicula tellus, a consectetur odio accumsan eu. Cras tempus sodales risus, vel molestie neque tincidunt non. Cras cursus neque vel ante auctor, vel auctor lectus tempor. Fusce odio lacus, fringilla id placerat nec, tincidunt vitae leo. Praesent aliquet nulla id purus pharetra imperdiet. Quisque vestibulum in purus non tincidunt. Curabitur finibus felis ac nisl ultricies ultrices. Duis vitae tristique mi. Proin urna felis, sagittis ut turpis viverra, eleifend aliquam metus.</p>
+</div>
+<div class="tab-pane active" id="committee">
       <h3 id="committee">The Committee</h3>
       <p>Nullam id pharetra nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis scelerisque sollicitudin neque, sed varius mi. Integer vel blandit lacus, sed dictum tortor. Sed vitae pretium tortor, ac faucibus lorem. Etiam vestibulum consequat leo, eu finibus est tincidunt eu. Nulla imperdiet felis non pulvinar interdum. Nullam dapibus volutpatVestibulum mattis viverra ante rutrum elementum. Aenean molestie hendrerit lacus eget maximus. Suspendisse tempor laoreet fringilla. Cras ut tincidunt nisi, in viverra elit. Integer ac facilisis turpis. Pellentesque enim massa, rutrum vitae malesuada a, ornare quis diam. Duis vel eros risus. Duis ornare nisl et neque rutrum imperdiet. Proin lobortis massa mauris, vitae convallis risus pellentesque sit amet.
 
@@ -34,8 +33,11 @@ Morbi faucibus varius molestie. Nam mauris ligula, cursus non porta a, venenatis
 Cras pellentesque sem vitae orci vestibulum aliquam. Proin nec erat diam. Maecenas semper mi lectus, a hendrerit ligula rutrum eget. Nulla blandit, nisi ut accumsan porta, dolor nulla blandit ipsum, sit amet molestie leo purus nec mi. Aenean ex purus, sollicitudin a justo id, sagittis posuere nulla. Duis ut magna arcu. Etiam in luctus ligula, quis vulputate eros. Etiam semper neque vitae orci placerat, quis porta nisi ornare. Nam vitae purus ultricies purus accumsan tincidunt. Praesent maximus pretium interdum. Duis maximus arcu at ligula tincidunt vestibulum. Ut tincidunt interdum molestie. Sed turpis justo, aliquet eu nulla eu, dignissim tristique elit.
 
 Quisque blandit molestie nunc, at lobortis odio vulputate et. Maecenas gravida arcu nisl, quis placerat lacus hendrerit in. Nunc eget varius turpis. Phasellus a lacus aliquet, semper velit dictum, consequat magna. Aliquam eleifend non augue et ornare. Sed vitae est non ex pulvinar bibendum in quis ipsum. In hac habitasse platea dictumst.</p>
+</div>
+<div class="tab-pane active" id="contact">
       <h3 id="contact">Contact Us!</h3>
       <p>Vestibulum mattis viverra ante rutrum elementum. Aenean molestie hendrerit lacus eget maximus. Suspendisse tempor laoreet fringilla. Cras ut tincidunt nisi, in viverra elit. Integer ac facilisis turpis. Pellentesque enim massa, rutrum vitae malesuada a, ornare quis diam. Duis vel eros risus. Duis ornare nisl et neque rutrum imperdiet. Proin lobortis massa mauris, vitae convallis risus pellentesque sit amet.
 
 In fermentum erat ut nibh lacinia egestas. Nulla orci nulla, ullamcorper id aliquet a, pharetra in leo. Nunc faucibus erat nec sem ullamcorper mollis. Fusce facilisis convallis ipsum. Nulla sagittis eleifend feugiat. Pellentesque cursus lectus sed metus varius, sed auctor turpis placerat. Donec eu dolor in ante fermentum luctus eget a purus. Nullam vel nisi congue, accumsan libero quis, bibendum magna. Pellentesque vel sagittis nisi, ultrices laoreet dui.</p>
-    </div>
+</div>
+</div>
