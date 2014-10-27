@@ -8,6 +8,7 @@ url: "//adamus1red.github.io/animated-octo-wookie"
 twitter_username: strath_geeksoc
 github_username:  GeekSoc
 paginate: 5
+paginate_path: "posts/page:num"
 
 #### Under the Hood Stuff #####
 
