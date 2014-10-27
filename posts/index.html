@@ -20,7 +20,7 @@ title: Blog Posts
   {% if paginator.previous_page %}
     <a href="{{site.baseurl}}/{{ paginator.previous_page_path | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg active">&laquo; Prev</a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <button type="button" class="btn btn-default btn-lg active">&laquo; Prev</button>
   {% endif %}
   </div>
   <div class="btn-group">
@@ -38,7 +38,7 @@ title: Blog Posts
   {% if paginator.next_page %}
     <a href="{{site.baseurl}}/{{ paginator.next_page_path | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg active">Next &raquo;</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <button type="button" class="btn btn-default btn-lg active">Next &raquo;</button>
   {% endif %}
   </div>
 </div>
