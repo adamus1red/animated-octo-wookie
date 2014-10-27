@@ -18,7 +18,7 @@ title: Blog Posts
 <div class="btn-toolbar" role="toolbar">
   <div class="btn-group">
   {% if paginator.previous_page %}
-    <a href="{{site.baseurl}}/{{ paginator.previous_page_path | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg active">&laquo; Prev</a>
+    <a href="{{site.baseurl}}/{{ paginator.previous_page_path | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg">&laquo; Prev</a>
   {% else %}
     <button type="button" class="btn btn-default btn-lg active">&laquo; Prev</button>
   {% endif %}
@@ -28,17 +28,17 @@ title: Blog Posts
     {% if page == paginator.page %}
       <button type="button" class="btn btn-default btn-lg active">{{ page }}</button>
     {% elsif page == 1 %}
-      <a href="{{site.baseurl}}/{{ 'posts' | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg active">{{ page }}</a>
+      <a href="{{site.baseurl}}/{{ 'posts' | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg disabled">{{ page }}</a>
     {% else %}
-      <a href="{{site.baseurl}}/{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}" role="button" class="btn btn-default btn-lg active">{{ page }}</a>
+      <a href="{{site.baseurl}}/{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}" role="button" class="btn btn-default btn-lg">{{ page }}</a>
     {% endif %}
   {% endfor %}
   </div>
   <div class="btn-group"></div>
   {% if paginator.next_page %}
-    <a href="{{site.baseurl}}/{{ paginator.next_page_path | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg active">Next &raquo;</a>
+    <a href="{{site.baseurl}}/{{ paginator.next_page_path | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg">Next &raquo;</a>
   {% else %}
-    <button type="button" class="btn btn-default btn-lg active">Next &raquo;</button>
+    <button type="button" class="btn btn-default btn-lg disabled">Next &raquo;</button>
   {% endif %}
   </div>
 </div>
