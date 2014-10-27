@@ -26,7 +26,7 @@ title: Blog Posts
   <div class="btn-group">
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <button type="button" class="btn btn-default btn-lg active">{{ page }}</button>
     {% elsif page == 1 %}
       <a href="{{site.baseurl}}/{{ 'posts' | replace: '//', '/' }}" role="button" class="btn btn-default btn-lg active">{{ page }}</a>
     {% else %}
