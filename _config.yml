@@ -3,12 +3,36 @@ title: GeekSoc
 author: "GeekSoc Admin Group"
 email: contact@geeksoc.org
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: "//adamus1red.github.io/animated-octo-wookie"
-url: "//adamus1red.github.io/animated-octo-wookie"
+baseurl: ""
+url: "//127.0.0.1:4000"
 twitter_username: strath_geeksoc
 github_username:  GeekSoc
+
 paginate: 5
-paginate_path: "posts/page:num"
+paginate_path: "/posts/:num/"
+
+committee_positions: [president, treasurer, comms, systems]
+committee:
+  president:
+    name: Robert Wilson
+    image: default.png
+    email: president@geeksoc.org
+    position: President
+  treasurer:
+    name: Eimantas Peckys
+    image: default.png
+    email: treasurer@geeksoc.org
+    position: Treasurer
+  systems:
+    name: Adam McGhie
+    image: default.png
+    email: magic@geeksoc.org
+    position: Systems Lead
+  comms:
+    name: Craig
+    image: default.png
+    email: comms@geeksoc.org
+    position: Communications Officer
 
 #### Under the Hood Stuff #####
 
