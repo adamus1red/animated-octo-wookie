@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4">
-            <h3><a href="{{site.url}}/about/">About {{site.title}}</a>
+            
         </div>
         <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-0">{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">
             <span class="pull-right icon github">

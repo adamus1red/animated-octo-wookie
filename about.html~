@@ -30,7 +30,7 @@ title: About Us
                     {% if committee.image == "" %}
                     <img width="55px" class="pull-left img-thumbnail" src="{{site.url}}/static/images/committee/default.png" alt="{{committee.name}}" />
                     {% else %}
-                    <img width="55px"class="pull-left img-thumbnail" src="{{site.url}}/static/images/committee/{{committee.image}}" alt="{{committee.name}}" />
+                    <img class="pull-left img-thumbnail" src="{{site.url}}/static/images/committee/{{committee.image}}" alt="{{committee.name}}" />
                     {% endif %}
                     <div class="media-body">
                         <h4 class="media-heading">{{committee.position}}</h4>

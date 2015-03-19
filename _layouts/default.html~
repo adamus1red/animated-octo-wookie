@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body{% if page.scroll-spy == 1 %} data-spy="scroll" data-target="{{page.scroll-spy-target}}"{% endif %}>
+
+    {% include header.html %}
+
+    <div class="container" style="padding-top: 40px;">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>
