@@ -49,3 +49,5 @@ permalink: pretty
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: README.md, package.json, grunt.js, Gruntfile.js, node_modules, gen.sh, Gemfile
+
+encoding: UTF-8
