@@ -10,7 +10,7 @@ layout: default
     {% for post in site.posts limit: 5 %}
         <article>
           <div class="blog-post">
-            <h2 class="blog-post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a><br />
+            <h2 class="blog-post-title"><a href="{{post.url | prepend: site.url}}">{{post.title}}</a><br />
             <small class="blog-post-meta">{{ post.date | date: "%b %-d, %Y" }} by {% if post.author %}{{post.author}}{% else %}GeekSoc{% endif %}</small></h2>
             <p>{{ post.excerpt }}</p>
           </div>
@@ -19,5 +19,5 @@ layout: default
         </div>
       </div>
 
-  <p class="rss-subscribe pull-left"><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-default btn-lg">Subscribe via RSS</a></p>
+  <p class="rss-subscribe pull-left"><a href="{{ "/feed.xml" | prepend: site.url }}" class="btn btn-default btn-lg">Subscribe via RSS</a></p>
 </div>
